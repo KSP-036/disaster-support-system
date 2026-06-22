@@ -1,0 +1,675 @@
+a { color: #b7a077; }
+a:visited { color: #a8a8a8; }
+a:hover {
+    color: #988564;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover img { opacity: 0.7; }
+
+.main_visual {
+    width: 100%;
+    height: 230px;
+    background: url(../images/biru1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+}
+.acount{
+    top: 30px;
+    width: 135px;
+    height: 130px;
+    position: fixed;	
+    right:0px;
+}
+
+nav {
+    background-color: #353423;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: #8c7a5b;
+    opacity: 0.7;
+}
+
+#breadcrumd { font-size: smaller; }
+
+#breadcrumd ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#breadcrumd ol li { display: inline; }
+
+#breadcrumd ol li::after {
+    content: ">";
+    padding-left: 7px;
+}
+
+#breadcrumd ol li:last-child::after { content: none; }
+
+#breadcrumd ul li a {
+    display: block;
+    padding: 16px;
+    background-color: #352b23;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.2s linear;
+}
+
+#breadcrumd ul li a:hover {
+    background: #5b8647;
+}
+
+div#sample {
+	height:0px;
+	right:0px;
+	color: #05050a;
+}
+
+    .tabbox { margin: 0px; padding: 1em; background-color: #f8f8ff; }
+
+    /* ▼タブ機能を制御するラジオボタン(非表示にする) */
+    .tabbox input { display: none; }
+ 
+    /* ▼タブ(共通装飾＋非選択状態の装飾) */
+    .tab {
+       display: inline-block;
+       border-width: 1px 1px 0px 1px;
+       border-style: solid;
+       border-color: black;
+       border-radius: 0.75em 0.75em 0px 0px;
+       padding: 0.75em 1em;
+       color: black;
+       background-color: #e0e0e0;
+       font-weight: bold;
+    }
+ 
+    /* ▼タブにマウスポインタが載った際の装飾 */
+    .tab:hover {
+       background-color: #ccffcc;
+       color: green;
+       cursor: pointer;
+    }
+ 
+    /* ▼チェックが入っているラジオボタンの隣にあるタブの装飾(＝選択状態のタブ) */
+    input:checked + .tab {
+       color: red;
+       background-color: #ffffcc;
+       position: relative;
+       z-index: 10;
+    }
+ 
+    /* ▼タブの中身(共通装飾＋非選択状態の装飾) */
+    .tabcontent {
+       display: none;
+       border: 1px solid black;
+       margin-top: -1px;
+       padding: 1em;
+       position: relative;
+       z-index: 0;
+       background-color: #ffffcc;
+    }
+ 
+    /* ▼チェックが入っているラジオボタンに対応するタブの中身を表示する */
+    #tabcheck1:checked ~ #tabcontent1 { display: block; }
+    #tabcheck2:checked ~ #tabcontent2 { display: block; }
+    #tabcheck3:checked ~ #tabcontent3 { display: block; }
+    #tabcheck4:checked ~ #tabcontent4 { display: block; }
+    #tabcheck5:checked ~ #tabcontent5 { display: block; }
+    #tabcheck6:checked ~ #tabcontent6 { display: block; }
+
+#breadcrumb { font-size: smaller;}
+
+#breadcrumb ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#breadcrumb ol li { display: inline; }
+
+#breadcrumb ol li::after {
+    content: ">";
+    padding-left: 7px;
+}
+
+#breadcrumb ol li:last-child::after { content: none; }
+
+footer {
+    background-color: #352b23;
+    text-align: center;
+    z-index: 2100000000; /* ? */
+    clear: both;
+    position: relative;
+    height: 40px;
+    margin-top: 10px;
+}
+
+footer #footer_nav {
+    background-color: #efefef;
+    padding: 10px 0;
+    
+}
+
+footer #footer_nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer #footer_nav li {
+    display: inline;
+    border-left: solid 1px #aaa;
+    margin-left: 8px;
+    padding-left: 8px;
+    font-size: smaller;
+}
+
+footer #footer_nav li:last-child {
+    border-right: solid 1px #aaa;
+    padding: 0 8px;
+}
+
+footer small {
+    display: block;
+    padding: 8px 0;
+    color: #fff;
+    background-color: #352b23;
+}
+
+.page-section {
+    padding: 8rem 0;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.text-white {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+hr.divider {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #f4623a;
+    opacity: 1;
+}
+  
+hr.divider-light {
+    background-color: #fff;
+}
+
+.text-white-75 {
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.box{
+      color: #fff;
+      padding: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#box1{
+    background: #333;
+}
+#box2{
+    background: #666;
+}
+#box3{
+    background: #888;
+}
+
+.pagination {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+        transform: translateY(-50%);
+    font-size: 1em;
+    z-index: 10;
+    list-style: none;
+}
+
+.pagination a {
+    display: block;
+    height: 20px;
+    margin-bottom: 5px;
+    color: #fff;
+    position: relative;
+    padding: 4px;
+}
+
+.pagination a.active:after {
+    box-shadow:inset 0 0 0 5px;
+}
+  
+  /*現在地表示のテキストの設定*/
+.pagination a .hover-text {
+    position:absolute;
+    right:15px;
+    top:0;
+    opacity:0;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+    padding-right: 15px;
+}
+  
+.pagination a:hover .hover-text {
+    opacity: 1;
+}
+  
+.pagination a:after {
+    -webkit-transition:box-shadow 0.5s ease;
+    transition:box-shadow 0.5s ease;
+    width:10px;
+    height:10px;
+    display: block;
+    border:1px solid;
+    border-radius:50%;
+    content:"";
+    position: absolute;
+    margin:auto;
+    top:0;
+    right:3px;
+    bottom:0;
+}
+
+.box4{
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #b3e5fc;
+    border: solid 3px #29b6f6;
+}
+  
+.box p{
+    margin: 0;
+    padding: 0;
+}
+
+.box5{
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #ff99cc;
+    border: solid 3px #ff0000;
+}
+
+
+
+
+
+
+/* 以下佐々木追加 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+main {
+    margin-top: 10px;
+}
+
+/* 見出し */
+.heading {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.heading h1 {
+    background-color: #ffffff00;
+    margin: 0;
+    padding: 5px 5px 0px 10px;
+    color: #000000;
+    border-bottom: #000000 solid 2px;
+}
+
+
+/* グループリスト情報 */
+
+#gpi_li {
+    overflow: auto;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.gp_icon {
+    float: left;
+    margin: 15px;
+    font-size: 0;
+    border: #eecf44 solid 4px;
+    background-color: #fff3bf;
+    border-radius: 0 10px 10px 10px;
+    width: 300px;
+    padding: none;
+}
+
+.gpi_name {
+    float: left;
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 0px;
+    padding: 5px;
+    width: 88px;
+    border-right: #eecf44 solid 2px;
+    border-bottom: #eecf44 solid 2px;
+    border-radius: 0 0 5px 0;
+    background-color: #ec8e41;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.gpi_men {
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding-top: 20px;
+    width: 100px;
+    height: 100px;
+    font-size: 11px;
+}
+
+.gpi_men p {
+    margin: 0;
+}
+
+.icon_hlt::before {
+    content: "状態：";
+}
+
+.gp_icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.gpi_det {
+    text-align: center;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    font-size: 20px;
+}
+.gpi_det a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #808080;
+    opacity: 1.0;
+}
+
+.gpi_det a:hover {
+    opacity: 0.7;
+}
+
+.gpi_det a::after {
+    content: " >>";
+    width: 10px;
+    height: 10px;
+}
+
+/* グループ作成ボタン */
+.gp_crtbtn {
+    display: block;
+    float: left;
+    background-color: #ffc285;
+    position: relative;
+    margin: 15px;
+    padding: 0;
+    color: #000000;
+    width: 120px;
+    height: 120px;
+    border: #ee7600 solid 3px;
+    border-radius: 0 10px 10px 10px;
+    text-decoration: none;
+    transition: opasity 0.0s linear;
+}
+
+.gp_crtbtn .gp_cbtext {
+    position: absolute;
+    bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: auto;
+    padding: 0;
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.gp_crtbtn:hover {
+    opacity: 0.8;
+}
+
+.triangle {
+    margin: 0;
+    padding: 0;
+    float: left;
+    border-top: #ee7600 solid 10px;
+    border-left: #ee7600 solid 10px;
+    border-right: #ffffff00 solid 10px;
+    border-bottom: #ffffff00 solid 10px;
+}
+
+.icon_plus {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 0;
+    width: 56px;
+    height: 56px;
+}
+
+.ipl {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-right: #88aeff solid 3px;
+    border-bottom: #88aeff solid 3px;
+}
+
+.tol {
+    float: left;
+    transform: rotate(0deg);
+}
+
+.tor {
+    float: right;
+    transform: rotate(90deg);
+}
+
+.bol {
+    float: left;
+    transform: rotate(270deg);
+}
+
+.bor {
+    float: right;
+    transform: rotate(180deg);
+}
+
+/* アカウントボタン */
+.actbtn {
+    width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.actbtn button {
+    cursor: pointer;
+    margin: 20px;
+    width: 300px;
+    height: 70px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, .4);
+    border: none;
+    border-radius: 48px;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.actbtn button:hover {
+    opacity: 1.0;
+}
+
+.actbtn button:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.a_crt {
+    background-color: rgba(32, 152, 243);
+}
+
+.a_det {
+    background-color: rgba(235, 15, 15);
+}
+
+.a_login {
+    background-color: rgba(43, 156, 107);
+}
+
+.a_logout {
+    background-color: rgb(206, 195, 37);
+}
+
+/* その他 API加入で削除*/
+.map_image {
+    width: 100%;
+}
+
+#page-link{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+  
+#page-link li{
+    list-style: none;
+}
+  
+#page-link li a{
+    color: #333;
+    padding:0 20px;
+    text-decoration: none;
+}
+  
+#page-link li a::before{
+    content:'▼';
+    font-size:0.8rem;
+    padding:0 10px 0 0;
+    color: #ccc;
+}
+
+/* 2022/01/31 追加文 */
+.panel button {
+    color: #454545;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #454545;
+    position: relative;
+    margin: 1em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-family: comfortaa;
+    font-weight: bold;
+}
+
+.panel button:before, .panel button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-color: #454545;
+    box-sizing: border-box;
+    border-style: solid;
+    width: 1em;
+    height: 1em;
+    transition: all 0.3s ease-in-out;
+}
+
+.panel button:before {
+    top: -6px;
+    left: -6px;
+    border-width: 2px 0 0 2px;
+    z-index: 5;
+}
+
+.panel button:after {
+    bottom: -6px;
+    right: -6px;
+    border-width: 0 2px 2px 0;
+}
+
+.panel button:hover:before, .panel button:hover:after { width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: #353535;
+}
+
+.panel button:hover {
+    color: #353535;
+    background-color: #fff;
+    border-color: #353535;
+}
+
+.panel {
+    max-width: 960px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}

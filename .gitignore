@@ -1,0 +1,15 @@
+# 機密ファイル
+*.pem
+*.key
+ログインパスワード.txt
+
+# OS / エディタ
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ログ・キャッシュ
+*.log
+__pycache__/
+node_modules/

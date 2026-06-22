@@ -1,0 +1,340 @@
+.main_visual {
+    width: 100%;
+    height: 250px;
+    background: url(../../images/biru1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    background-color: #353423;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav li {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+}
+
+nav a:hover {
+    background-color: #8c7a5b;
+    opacity: 0.7;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button, input[type="submit"] {
+    outline: none;
+}
+
+.clear {
+    clear: both;
+}
+
+hr {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    border: 1px solid rgba(128, 128, 128, 0.673);
+}
+
+body {
+    color: #2b546a;
+    background-color: #fafafa;
+    font-family:"Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+
+h1 {
+    font-size: 27px;
+    margin: 0;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.content {
+    position: relative;
+    margin: 10px auto;
+    background-color: #fff;
+    border: 1px solid #d1d1d1;
+    max-width: 500px;
+    padding: 20px 50px 3px;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 60%;
+    background-color: rgba(32, 152, 243, 0.9);
+    border: none;
+    color: #fff;
+    padding: 15px;
+    border-radius: 48px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, .4);
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background-color: rgba(32, 152, 243, 1.0);
+}
+
+.btn:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.btnl {
+    width: 40%;
+    text-decoration: none;
+    background-color: rgba(27, 177, 112, 0.8);
+    box-shadow: 0 5px 2px rgba(0, 0, 0, .4);
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 48px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btnl:hover {
+    background-color: rgba(27, 177, 112, 1.0);
+}
+
+.btnl:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.next-btn {
+    float: right;
+    width: 40%;
+}
+
+.back-btn {
+    width: 40%;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(27, 177, 112, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 5px 2px rgba(0, 0, 0, .4);
+    padding: 15px;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    background-color: rgba(27, 177, 112, 1.0);
+}
+
+.back-btn:active {
+    position: relative;
+    top: 5px;
+    box-shadow: none;
+}
+
+.control {
+    margin-bottom: 3em;
+    max-width: 400px;
+    width: 100%;
+    height: 55px;
+    background-color: #f0f0f0;
+    margin: 14px 0;
+    border-radius: 55px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+
+.control-1 {
+    text-align: center;
+    margin: 25px;
+}
+
+.control i {
+    text-align: center;
+    line-height: 55px;
+    color: #2F4F4F;
+    font-size: 1.5rem;
+}
+
+.control input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.control input:placeholder-shown {
+    color: #aaa;
+    font-weight: 300;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: .8em;
+    }
+
+    .login-btn {
+        padding: 4px 3px 4px 8px;;
+        top: 28px;
+        line-height: 21px;
+    }
+
+    .login-btn:active {
+        top: 30px;
+    }
+}
+
+
+
+
+/* 以下佐々木追加分*/
+/* ヘッダー*/
+#global_navi {
+    width: 980px;
+    clear: both;
+    overflow: hidden;
+    margin: 0px auto;
+    
+}
+
+#global_navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#global_navi ul li {
+    width: 244px;
+    float: left;
+    margin-right: 1px;
+    text-align: center;
+}
+
+#global_navi ul li a {
+    display: block;
+    padding: 16px;
+    background-color: #352b23;
+    color: #fff;
+    text-decoration: none;
+}
+
+#global_navi ul li a:hover {
+    background-color: #8c7a5b;
+}
+
+.main_visual {
+    position: relative;
+}
+
+/* フッター */
+footer {
+    background-color: #352b23;
+    text-align: center;
+    z-index: 2100000000;
+}
+
+footer #footer_nav {
+    background-color: #efefef;
+    padding: 10px 0;
+}
+
+footer #footer_nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer #footer_nav li {
+    display: inline;
+    border-left: solid 1px #aaa;
+    margin-left: 8px;
+    padding-left: 8px;
+    font-size: smaller;
+}
+
+footer #footer_nav li:last-child {
+    border-right: solid 1px #aaa;
+    padding: 0 8px;
+}
+
+footer small {
+    display: block;
+    padding: 8px 0;
+    color: #fff;
+}
+
+.acount {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+footer a { color: #b7a077; }
+footer a:visited { color: #a8a8a8; }
+footer a:hover {
+    color: #988564;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover img { opacity: 0.7; }
+
+/* 見出し */
+.heading {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.heading h1 {
+    text-align: left;
+    background-color: #ffffff00;
+    margin: 0;
+    padding: 5px 5px 0px 10px;
+    color: #000000;
+    border-bottom: #000000 solid 2px;
+}

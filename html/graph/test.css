@@ -1,0 +1,7 @@
+.contents{
+    width: 100px;
+    height: 100px;
+}
+.chart-container canvas{
+    float: right;
+}
